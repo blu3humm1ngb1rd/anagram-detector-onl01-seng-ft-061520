@@ -25,7 +25,7 @@ class Anagram
       split_word = word.split(" ")
       array_of_words.each do |words|
         words.do |letters|
-         if letters.sort == split_word
+         if letters.sort == split_word.sort 
            words 
          else 
            "no match found"
