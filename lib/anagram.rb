@@ -14,17 +14,11 @@ class Anagram
   
   def match(array_of_words)
     #binding.pry 
-#     @@letters = @@letters.join.split(" ")
-#     array_of_words.find_all do 
-#       |test_word| new_array = test_word.split(" ") 
-#       if new_array == @@letters
-#       end 
-#   end 
-# end 
- array_of_words.select do |element|
+
+     array_of_words.select do |element|
       (@word.split("").sort) == (element.split("").sort)
-    end
-  
+     end
+  end 
   
 end 
 
