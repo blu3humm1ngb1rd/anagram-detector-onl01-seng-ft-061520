@@ -21,21 +21,13 @@ class Anagram
 #       end 
 #   end 
 # end 
-
-      split_word = word.split(" ")
-      array_of_words.each do |words|
-        words.do |letters|
-         if letters.sort == split_word.sort 
-           words 
-         else 
-           "no match found"
-          
-       end 
-     end 
-   end 
+ array_of_words.select do |element|
+      (@word.split("").sort) == (element.split("").sort)
+    end
   
   
 end 
+
 
     #each_char
     #word passed in is a string ; array passed in is array of words 
